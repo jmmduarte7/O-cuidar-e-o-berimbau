@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap');
 
-:root { --ink: #7c042c; --wine: #7c042c; --primary: #f80b65; --blue: #6182af; --paper: #ffffff; --line: #dce3ec; --muted: #5f6d7e; }
+:root { --ink: #7c042c; --wine: #7c042c; --primary: #f80b65; --blue: #6182af; --afya-purple: #532581; --paper: #ffffff; --line: #dce3ec; --muted: #5f6d7e; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; }
@@ -49,9 +49,11 @@ h2 { font-size: clamp(32px, 4vw, 54px); line-height: 1.05; }
 .highlights { padding-bottom: 125px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 36px; }
 .section-heading h2 { font-size: clamp(30px, 3.3vw, 46px); }
-.button-outline { border: 1px solid var(--blue); border-radius: 999px; padding: 12px 18px; }
+.button-outline { border: 1px solid var(--primary); border-radius: 999px; padding: 12px 18px; }
 button.button { font-family: inherit; line-height: inherit; color: inherit; background: transparent; cursor: pointer; }
-.button-outline:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+.button-outline:hover, .button-outline:focus-visible { border-color: var(--primary); color: #fff; background: linear-gradient(110deg, var(--primary), var(--afya-purple), #7540a2); background-size: 200% 100%; animation: practice-button-purple 1.4s ease-in-out infinite alternate; }
+@keyframes practice-button-purple { to { background-position: 100% 50%; box-shadow: 0 4px 16px rgba(83,37,129,.32); } }
+@media (prefers-reduced-motion: reduce) { .button-outline { transition: none; } .button-outline:hover, .button-outline:focus-visible { transform: none; animation: none; background: var(--afya-purple); } }
 .highlight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; }
 .highlight-card { min-height: 360px; position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 12px; overflow: hidden; padding: 26px; border-radius: 8px; background: var(--wine); color: #fff; transition: transform .25s ease, box-shadow .25s ease; }
 .highlight-card:hover { transform: translateY(-6px); box-shadow: 0 14px 26px rgba(124,4,44,.18); }
