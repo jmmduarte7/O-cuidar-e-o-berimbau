@@ -1,0 +1,59 @@
+.territory-page, .care-topic-page { --territory-paper: #f3f0eb; background: var(--territory-paper); }
+.topic-prevention { --topic-image: url('https://images.pexels.com/photos/20860603/pexels-photo-20860603.jpeg?cs=srgb&dl=pexels-funkcines-terapijos-centras-927573878-20860603.jpg&fm=jpg'); }
+.topic-first-aid { --topic-image: url('https://images.pexels.com/photos/3760275/pexels-photo-3760275.jpeg?cs=srgb&dl=pexels-olly-3760275.jpg&fm=jpg'); }
+.topic-promotion { --topic-image: url('https://images.pexels.com/photos/30495349/pexels-photo-30495349.jpeg?cs=srgb&dl=pexels-braujardim-30495349.jpg&fm=jpg'); }
+.topic-education { --topic-image: url('https://images.pexels.com/photos/34082712/pexels-photo-34082712.jpeg?cs=srgb&dl=pexels-tahir-34082712.jpg&fm=jpg'); }
+.topic-inclusion { --topic-image: url('https://images.pexels.com/photos/8556497/pexels-photo-8556497.jpeg?cs=srgb&dl=pexels-edmond-dantes-8556497.jpg&fm=jpg'); }
+.care-topic-page .territory-hero { position: relative; background-color: var(--wine); background-image: linear-gradient(90deg, rgba(124,4,44,.94), rgba(124,4,44,.72) 54%, rgba(124,4,44,.32)), var(--topic-image); background-position: center; background-size: cover; }
+.care-topic-page .territory-story-image img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.78); }
+.care-topic-page .territory-story-image span { color: #fff; text-shadow: 0 1px 8px rgba(124,4,44,.8); }
+.territory-page .site-header { color: #fff; }
+.territory-hero { min-height: 600px; display: flex; align-items: center; background: var(--wine); color: #fff; }
+.territory-hero-copy { max-width: 760px; padding: 150px 32px 85px; margin: 0 auto; }
+.territory-hero-copy h1 { max-width: 570px; }
+.territory-hero-copy > p:not(.eyebrow) { max-width: 450px; margin: 30px 0 28px; color: #f5dce5; font-size: 17px; line-height: 1.55; }
+.territory-hero-image { position: relative; min-height: 680px; overflow: hidden; }
+.territory-hero-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(124,4,44,.32), transparent 42%), linear-gradient(0deg, rgba(124,4,44,.62), transparent 35%); }
+.territory-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.8); }
+.territory-hero-image span { position: absolute; z-index: 1; left: 30px; bottom: 28px; color: #fff; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.territory-stats { background: var(--primary); color: #fff; }
+.territory-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-top: 28px; padding-bottom: 28px; }
+.territory-stats-grid div { display: flex; align-items: baseline; gap: 10px; border-right: 1px solid rgba(255,255,255,.35); padding-left: 24px; }
+.territory-stats-grid div:first-child { padding-left: 0; }
+.territory-stats-grid div:last-child { border-right: 0; }
+.territory-stats strong { font-family: 'Manrope', sans-serif; font-size: 34px; }
+.territory-stats span { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.territory-intro { padding-top: 120px; padding-bottom: 125px; }
+.territory-intro-grid { display: grid; grid-template-columns: 1.05fr .8fr; gap: 13%; align-items: end; }
+.territory-intro-grid > div { color: var(--muted); font-size: 17px; line-height: 1.6; }
+.territory-intro-grid p { margin: 0 0 18px; }
+.territory-features { padding: 90px 0 110px; background: #fff; }
+.territory-feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.territory-feature-grid article { min-height: 250px; padding: 28px; border-top: 3px solid var(--primary); background: var(--territory-paper); transition: transform .25s ease, box-shadow .25s ease; }
+.territory-feature-grid article:hover { transform: translateY(-6px); box-shadow: 0 14px 26px rgba(124,4,44,.12); }
+.territory-feature-grid span { color: var(--primary); font-family: 'Manrope', sans-serif; font-size: 13px; font-weight: 800; }
+.territory-feature-grid h3 { margin: 38px 0 12px; font-size: 28px; }
+.territory-feature-grid p { max-width: 260px; margin: 0; color: var(--muted); line-height: 1.55; }
+.territory-story { padding: 110px 0; background: #fff; }
+.territory-story-grid { display: grid; grid-template-columns: .8fr 1fr; gap: 10%; align-items: center; }
+.territory-story-copy p:not(.eyebrow) { max-width: 460px; color: var(--muted); font-size: 17px; line-height: 1.6; }
+.territory-story-image { position: relative; height: 480px; overflow: hidden; background: var(--territory-paper); }
+.territory-story-image img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.78); }
+.territory-story-image span { position: absolute; bottom: 24px; left: 24px; color: var(--ink); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.section-heading-note { max-width: 220px; margin: 0; color: var(--muted); line-height: 1.5; font-size: 14px; }
+.territory-quote { padding-top: 110px; padding-bottom: 120px; }
+.territory-quote blockquote { max-width: 820px; margin: 0 0 34px; font-family: 'Manrope', sans-serif; font-size: clamp(34px, 5vw, 68px); line-height: 1.02; letter-spacing: -.055em; }
+@media (max-width: 760px) {
+	.territory-hero-copy { padding: 135px 24px 75px; }
+	.territory-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 0; }
+	.territory-stats-grid div:nth-child(2) { border-right: 0; }
+	.territory-stats-grid div:nth-child(3) { padding-left: 0; }
+	.territory-intro { padding-top: 80px; padding-bottom: 80px; }
+	.territory-intro-grid, .territory-feature-grid, .territory-story-grid { grid-template-columns: 1fr; gap: 28px; }
+	.territory-features { padding: 70px 0 80px; }
+	.territory-feature-grid article { min-height: 0; }
+	.territory-feature-grid h3 { margin-top: 24px; }
+	.territory-story { padding: 80px 0; }
+	.territory-story-image { height: 330px; }
+	.territory-quote { padding-top: 80px; padding-bottom: 90px; }
+}

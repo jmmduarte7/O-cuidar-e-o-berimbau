@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Cuidar e o Berimbau | Maranhão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="O Cuidar e o Berimbau - início"><span class="brand-logo-frame"><img class="brand-logo" src="Slides/Logoprojeto.png" alt=""></span><span>O Cuidar<br><strong>e o Berimbau</strong></span></a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="main-menu" aria-expanded="false">☰</button>
+        <div class="nav-links" id="main-menu"><a href="#sobre">Sobre o projeto</a><a href="indexhistorias.html">Histórias</a><a href="indexpraticas.html">Práticas</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy"><p class="eyebrow">Conhecimento que nasce no território</p><h1>Enfermagem que cuida, <span>cultura que transforma.</span></h1><p class="hero-text">Uma jornada pelos saberes, práticas e histórias que aproximam o cuidado em saúde das comunidades do Maranhão.</p><div class="hero-actions"><a class="button button-primary" href="#sobre">Conheça o projeto <span>→</span></a></div></div>
+        <div class="hero-image"><img src="Slides/Img1.png.jpg" alt="Profissional de enfermagem acolhe um praticante durante uma roda de capoeira"><span class="image-label">Enfermagem e capoeira: cuidado que acontece em comunidade</span></div>
+      </section>
+      <section class="intro section-shell" id="sobre"><p class="eyebrow">Um olhar ampliado</p><div class="intro-grid"><h2>O cuidado também é feito de <span>escuta e pertencimento.</span></h2><p>Este projeto reúne experiências de enfermagem e cultura para valorizar os modos de viver, cuidar e construir saúde em cada lugar. Aqui, a comunidade não é cenário: é parte essencial do conhecimento.</p></div></section>
+      <section class="highlights section-shell" id="territorios"><div class="section-heading"><div><p class="eyebrow">Enfermagem na capoeira</p><h2>A importância da assistência e da promoção da saúde dentro da roda.</h2></div><a class="button button-outline" href="indexpraticas.html">Conhecer as práticas <span>→</span></a></div><div class="highlight-grid"><a class="highlight-card care-prevention" href="indexlesoes.html"><span class="card-kicker">01 / Prevenção</span><h3>Prevenção de lesões</h3><p class="card-description">Aquecimento, alongamento e movimento com segurança.</p><span class="card-more">Saiba mais <span aria-hidden="true">→</span></span></a><a class="highlight-card care-first-aid" href="indexsocorros.html"><span class="card-kicker">02 / Cuidado imediato</span><h3>Primeiros socorros</h3><p class="card-description">Acolhimento rápido e seguro diante de imprevistos na roda.</p><span class="card-more">Saiba mais <span aria-hidden="true">→</span></span></a><a class="highlight-card care-promotion" href="indexpromocaosaude.html"><span class="card-kicker">03 / Bem-estar</span><h3>Promoção da saúde</h3><p class="card-description">Capoeira, hábitos saudáveis e cuidado integral.</p><span class="card-more">Saiba mais <span aria-hidden="true">→</span></span></a><a class="highlight-card care-education" href="indexeducacaoemsaude.html"><span class="card-kicker">04 / Conhecimento</span><h3>Educação em saúde</h3><p class="card-description">Informação e autocuidado compartilhados na comunidade.</p><span class="card-more">Saiba mais <span aria-hidden="true">→</span></span></a><a class="highlight-card care-inclusion" href="indexqualidadedevida.html"><span class="card-kicker">05 / Comunidade</span><h3>Qualidade de vida e inclusão</h3><p class="card-description">Respeito, pertencimento e bem-estar para todas as pessoas.</p><span class="card-more">Saiba mais <span aria-hidden="true">→</span></span></a></div></section>
+    </main>
+    <footer id="contato"><div class="footer-brand"><span class="brand-logo-frame"><img class="brand-logo" src="Slides/Logoprojeto.png" alt=""></span><span>O Cuidar e o Berimbau</span></div><p>© 2026 O Cuidar e o Berimbau. Projeto de valorização dos saberes locais.</p></footer>
+    <div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script><script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <script>document.querySelector('.nav-toggle').addEventListener('click', function () { const menu = document.querySelector('.nav-links'); const open = menu.classList.toggle('is-open'); this.setAttribute('aria-expanded', open); });</script>
+</body>
+</html>
